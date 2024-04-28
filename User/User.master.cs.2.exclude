@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class student_student : System.Web.UI.MasterPage
+{
+    CloudComputing c = new CloudComputing();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        if (!IsPostBack)
+        {
+            c.ReadData("select '~/Photo/'+photo as im,Ownername from UserRegistration where Ownerid='" + (String)Session["uname"] + "'");
+            while (c.dr.Read())
+            {
+                img_prof.ImageUrl = c.dr["im"].ToString();
+                lblname.Text = c.dr["Ownername"].ToString();
+            }
+            c.FillGrid("select * from Filearchieve where fowner='" + (String)Session["Uname"] + "'", GridView1);
+        }
+    }
+    protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)
+    {
+
+    }
+}

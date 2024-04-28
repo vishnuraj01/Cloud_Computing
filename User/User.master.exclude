@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="Visitor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Multi Cloud Storage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../css/style.css" rel="stylesheet" type="text/css" />
+<script src="../js/jquery-1.4.2.min.js" type="text/javascript"></script>
+<script src="../js/cufon-yui.js" type="text/javascript"></script>
+<script src="../js/cufon-replace.js" type="text/javascript"></script>
+<script src="../js/AvantGarde_Bk_BT_400.font.js" type="text/javascript"></script>
+<script src="../js/Myriad_Pro_300.font.js" type="text/javascript"></script>
+<script src="../js/jcarousellite.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".carousel").jCarouselLite({
+            btnNext: ".next",
+            btnPrev: ".prev"
+        });
+    });
+</script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<!-- START PAGE SOURCE -->
+<div class="tail-top-left"></div>
+<div class="tail-top">
+  <div id="header">
+    <div class="row-1">
+      <div class="fleft"> Cloud Information Accountability  </div>
+ <form id="form1" runat="server">
+      <div class="fright">
+        <ul>
+          <li><a href="UserHome.aspx">Home</a></li>
+          <li><a href="Contactus.aspx">Contact</a></li>
+          <li> 
+              <asp:LinkButton ID="lbtn_signout" runat="server" CausesValidation="False" 
+                  onclick="lbtn_signout_Click">Sign Out</asp:LinkButton></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div class="row-1">
+      <div class="inside">
+        <div class="container">
+          <div class="aside">
+            <ul>
+            <li><a href="Fileupload.aspx">Upload File</a></li>
+              <li><a href="VerifiedFile.aspx">Verified File</a></li>
+              <li><a href="FileUpdate.aspx">File Update</a></li>    
+              <li><a href="ProfileEdit.aspx">Profile</a></li>             
+            </ul>
+            <div class="wrapper"></div>
+          </div>
+            <div class="wrapper" align="right">
+                Owner Name : <asp:Label ID="lbl_name" runat ="server" ForeColor="#D7006B"></asp:Label>
+            </div>
+          <div class="content">
+            <div class="wrapper">
+             
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+    </form>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+    <div class="tail-middle">
+      <div class="row-2">
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <div class="footerlink">
+      <p class="lf">Copyright &copy; 2014 <a href="#">www.multicloudstorage.com</a> - All Rights Reserved</p>
+      <p class="rf">Designed By <a href="">w3layouts.com</a></p>
+      <div style="clear:both;"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">    Cufon.now(); </script>
+<!-- END PAGE SOURCE -->
+  
+</body>
+</html>
