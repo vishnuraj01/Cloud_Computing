@@ -1,0 +1,74 @@
+﻿using System;
+using System.Data;
+using System.Configuration;
+using System.Linq;
+using System.Web;
+using System.Web.Security;
+using System.Web.UI;
+using System.Web.UI.HtmlControls;
+using System.Web.UI.WebControls;
+using System.Web.UI.WebControls.WebParts;
+using System.Xml.Linq;
+
+/// <summary>
+/// Summary description for DL_SendSMS
+/// </summary>
+public class DL_SendSMS
+{
+    string sendermobile="";
+    string userpassword="";
+    string message="";
+    string receivermobile = "";
+	public DL_SendSMS()
+	{
+		//
+		// TODO: Add constructor logic here
+		//
+	}
+
+    public string Sender
+    {
+        set 
+        {
+            sendermobile = value;
+        }
+        get 
+        {
+            return sendermobile;
+        }
+    }
+    public string Message
+    {
+        set
+        {
+            message = value;
+        }
+        get
+        {
+            return message;
+        }
+    }
+
+    public string SenderPassword
+    {
+        set
+        {
+            userpassword = value;
+        }
+        get
+        {
+            return userpassword;
+        }
+    }
+    public string ReceiverMobile
+    {
+        set
+        {
+            receivermobile = value;
+        }
+        get
+        {
+            return receivermobile;
+        }
+    }
+}
