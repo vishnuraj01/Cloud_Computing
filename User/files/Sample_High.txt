@@ -1,0 +1,48 @@
+USE [dbMultiCloud]
+GO
+/****** Object:  Table [dbo].[Login]    Script Date: 04/01/2019 13:00:03 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[Login](
+	[Uname] [varchar](100) NULL,
+	[Pwd] [varchar](100) NULL,
+	[Utype] [tinyint] NULL
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'anjalik12', N'anjali121*', 3)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'akshara123', N'akshara1*', 3)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'admin', N'admin', 1)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'tpa', N'tpa', 2)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'anju123', N'anju1*', 3)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'athira123', N'athi1*', 3)
+INSERT [dbo].[Login] ([Uname], [Pwd], [Utype]) VALUES (N'chaithra123', N'chai121*', 3)
+/****** Object:  Table [dbo].[KeyGenerate]    Script Date: 04/01/2019 13:00:03 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[KeyGenerate](
+	[Kid] [int] NOT NULL,
+	[Key] [int] NULL,
+ CONSTRAINT [PK_KeyGenerate] PRIMARY KEY CLUSTERED 
+(
+	[Kid] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (1, 125)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (2, 325)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (3, 987)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (4, 875)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (5, 654)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (6, 238)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (7, 568)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (8, 456)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (9, 754)
+INSERT [dbo].[KeyGenerate] ([Kid], [Key]) VALUES (10, 546)
