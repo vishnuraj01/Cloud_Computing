@@ -1,0 +1,84 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Tpa.master.cs" Inherits="Visitor" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Multi Cloud Storage</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="Taxi Booking Form Widget Responsive, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates, Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- //Meta-Tags -->
+
+<!-- Custom-Style-Sheet -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+<link rel="stylesheet" href="css/jquery-ui.css" type="text/css" media="all">
+<!-- //Custom-Style-Sheet -->
+
+<!-- Fonts -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" type="text/css" media="all">
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700"			   type="text/css" media="all">
+<!-- //Fonts -->
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+<h1>TPA LOGIN FORM</h1>
+
+		<div class="containerw3layouts-agileits">
+
+            <form id="frm" runat="server">
+			<h2>
+                <div class="aitssubmitw3ls">
+					
+                <asp:Button ID="Button2" CausesValidation="false" runat="server" Text="CLOUD 1" OnClick="Button2_Click" />
+                <asp:Button ID="Button3" CausesValidation="false" runat="server" Text="CLOUD 2" OnClick="Button3_Click" />
+                <asp:Button ID="Button4" CausesValidation="false" runat="server" Text="CLOUD 3" OnClick="Button4_Click" />
+                <asp:Button ID="Button1" CausesValidation="false" runat="server" Text="HOME" OnClick="Button1_Click" />
+                <asp:Button ID="Button5" CausesValidation="false" runat="server" Text="LOGOUT" OnClick="Button5_Click" />
+                    </div>
+			</h2>
+
+			<div class="w3layoutscontactagileits">
+		
+
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+			</div>
+                </form>
+		</div>
+
+		<div class="w3lsfooteragileits">
+			<p>© 2024 Multicloud Storage. All rights reserved | Design by <a href="#">Vishnuraj Nellithanam Raveendran</a></p>
+		</div>
+
+
+
+		<!-- Necessary-JavaScript-Files-&-Links -->
+
+			<!-- Default-JavaScript --> <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+
+			<!-- Date-Picker-JavaScript -->
+				<script src="js/jquery-ui.js"></script>
+				<script>
+				    $(function () {
+				        $("#datepicker1,#datepicker2").datepicker();
+				    });
+				</script>
+			<!-- //Date-Picker-JavaScript -->
+
+		<!-- //Necessary-JavaScript-Files-&-Links -->
+
+
+
+    
+</body>
+</html>
